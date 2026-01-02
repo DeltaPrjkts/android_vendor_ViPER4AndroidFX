@@ -33,6 +33,9 @@ cc_prebuilt_library_shared {
             ],
         },
     },
+    required: [
+        "libviperaidl",
+    ],
     ignore_max_page_size: true,
     compile_multilib: "both",
     vendor: true,
