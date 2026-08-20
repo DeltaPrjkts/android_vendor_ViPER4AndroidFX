@@ -41,3 +41,35 @@ cc_prebuilt_library_shared {
     vendor: true,
     relative_install_path: "soundfx",
 }
+
+cc_prebuilt_library_shared {
+    name: "libv4a_hidl",
+    installable: true,
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: ["vendor/lib/soundfx/libv4a_hidl.so"],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: ["vendor/lib64/soundfx/libv4a_hidl.so"],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    ignore_max_page_size: true,
+    compile_multilib: "both",
+    vendor: true,
+    relative_install_path: "soundfx",
+}

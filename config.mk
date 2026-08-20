@@ -7,7 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     ViPER4AndroidFX \
-    libv4a_aidl
+    libv4a_aidl \
+    libv4a_hidl
 
 # SEPolicy
 ifneq ($(filter sailfish marlin walleye taimen blueline crosshatch sargo bonito flame coral redfin oriole raven panther cheetah lynx felix shiba husky akita tokay caiman komodo tegu frankel blazer mustang rango stallion, $(LINEAGE_BUILD)),)
