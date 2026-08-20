@@ -8,14 +8,14 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libv4a_re",
+    name: "libv4a_aidl",
     installable: true,
     strip: {
         none: true,
     },
     target: {
         android_arm: {
-            srcs: ["vendor/lib/soundfx/libv4a_re.so"],
+            srcs: ["vendor/lib/soundfx/libv4a_aidl.so"],
             shared_libs: [
                 "liblog",
                 "libm",
@@ -24,7 +24,7 @@ cc_prebuilt_library_shared {
             ],
         },
         android_arm64: {
-            srcs: ["vendor/lib64/soundfx/libv4a_re.so"],
+            srcs: ["vendor/lib64/soundfx/libv4a_aidl.so"],
             shared_libs: [
                 "liblog",
                 "libm",
